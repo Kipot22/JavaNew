@@ -1,0 +1,181 @@
+{
+  "id": "a3c083ed-4fd1-4531-90d8-94ee02714dab",
+  "version": "2.0",
+  "name": "MyStore",
+  "url": "http://automationpractice.com",
+  "tests": [{
+    "id": "d68b951c-5038-40ed-8b2e-64981461f47a",
+    "name": "AddToCart1",
+    "commands": [{
+      "id": "6f0cd528-dd7d-4f74-9070-c965bb09dce9",
+      "comment": "",
+      "command": "open",
+      "target": "/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0294d60b-49e5-4c4f-8ad5-9f1111973b7a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "33dfeb27-0739-4fa6-bebe-24f77a8685d8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sfHover > .sf-with-ul",
+      "targets": [
+        ["css=.sfHover > .sf-with-ul", "css:finder"],
+        ["xpath=(//a[contains(text(),'Dresses')])[5]", "xpath:link"],
+        ["xpath=//div[@id='block_top_menu']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[@href='http://automationpractice.com/index.php?id_category=8&controller=category'])[2]", "xpath:href"],
+        ["xpath=//div[6]/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7da6172a-f869-4696-b555-bda2c851237b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sfHover:nth-child(1) > a",
+      "targets": [
+        ["css=.sfHover:nth-child(1) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Casual Dresses')])[2]", "xpath:link"],
+        ["xpath=//div[@id='block_top_menu']/ul/li[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[@href='http://automationpractice.com/index.php?id_category=9&controller=category'])[2]", "xpath:href"],
+        ["xpath=//div[6]/ul/li[2]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "820319f7-4a41-48cb-b5f2-e9c72efc863e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ajax_add_to_cart_button > span",
+      "targets": [
+        ["css=.ajax_add_to_cart_button > span", "css:finder"],
+        ["xpath=//div[@id='center_column']/ul/li/div/div[2]/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Add to cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d99ea63e-39aa-44a4-8934-f388ffca6d09",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button-medium:nth-child(2) > span",
+      "targets": [
+        ["css=.button-medium:nth-child(2) > span", "css:finder"],
+        ["xpath=//div[@id='layer_cart']/div/div[2]/div[4]/a/span", "xpath:idRelative"],
+        ["xpath=//div[4]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Proceed to checkout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d91f8ef8-3333-4064-9866-ad66716bcf8b",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=cart_title",
+      "targets": [
+        ["id=cart_title", "id"],
+        ["css=#cart_title", "css:finder"],
+        ["xpath=//h1[@id='cart_title']", "xpath:attributes"],
+        ["xpath=//div[@id='center_column']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": "SHOPPING-CART SUMMARYYour shopping cart contains: 1 Product"
+    }]
+  }, {
+    "id": "fde8f831-e74a-4b2c-986e-6b6deafb4f74",
+    "name": "AddToWish",
+    "commands": [{
+      "id": "9ebe2385-dd47-4f8f-ab51-58b5daeb301f",
+      "comment": "",
+      "command": "open",
+      "target": "/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "04d52659-1010-4221-abd5-e12eebf23a9d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "caf018a9-0cb8-4750-862d-67dafbcf935c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sfHover > a",
+      "targets": [
+        ["css=.sfHover > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'T-shirts')])[2]", "xpath:link"],
+        ["xpath=//div[@id='block_top_menu']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[@href='http://automationpractice.com/index.php?id_category=5&controller=category'])[2]", "xpath:href"],
+        ["xpath=//div[6]/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "71bac036-a125-4de5-b0dc-5a55a3a74afa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.lnk_view > span",
+      "targets": [
+        ["css=.lnk_view > span", "css:finder"],
+        ["xpath=//div[@id='center_column']/ul/li/div/div[2]/div[2]/a[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/a[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'More')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe3a17e5-988a-4f08-a886-f7f3856f20dc",
+      "comment": "",
+      "command": "click",
+      "target": "id=wishlist_button",
+      "targets": [
+        ["id=wishlist_button", "id"],
+        ["linkText=Add to wishlist", "linkText"],
+        ["css=#wishlist_button", "css:finder"],
+        ["xpath=//a[contains(text(),'Add to wishlist')]", "xpath:link"],
+        ["xpath=//a[@id='wishlist_button']", "xpath:attributes"],
+        ["xpath=//form[@id='buy_block']/div/div[3]/p/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div[3]/p/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "74dba2ed-d708-4ea9-b392-7913d33ecee5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.fancybox-error",
+      "targets": [
+        ["css=.fancybox-error", "css:finder"],
+        ["xpath=//body[@id='category']/div[4]/div/div/div/div/p", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'You must be logged in to manage your wishlist.')]", "xpath:innerText"]
+      ],
+      "value": "You must be logged in to manage your wishlist."
+    }, {
+      "id": "190896f1-2e9d-480b-8222-29cef9e479f3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fancybox-item",
+      "targets": [
+        ["css=.fancybox-item", "css:finder"],
+        ["xpath=//body[@id='product']/div[2]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:;')]", "xpath:href"],
+        ["xpath=//body/div[2]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1a2d935b-d473-4a24-8c28-22fd8b84c628",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://automationpractice.com/"],
+  "plugins": []
+}
